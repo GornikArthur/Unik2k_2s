@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj": {}
+    "C:\\Users\\artur\\Documents\\unik\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj": {
+    "C:\\Users\\artur\\Documents\\unik\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj",
+        "projectUniqueName": "C:\\Users\\artur\\Documents\\unik\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj",
         "projectName": "PaintWPF",
-        "projectPath": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj",
+        "projectPath": "C:\\Users\\artur\\Documents\\unik\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\PaintWPF.csproj",
         "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\obj\\",
+        "outputPath": "C:\\Users\\artur\\Documents\\unik\\Unik2k_2s\\ООТПиСП\\PaintWPF\\PaintWPF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -104,7 +104,7 @@
 			ColumnButtonMake.Name = "ColumnButtonMake";
 			ColumnButtonMake.Size = new Size(123, 33);
 			ColumnButtonMake.TabIndex = 5;
-			ColumnButtonMake.Text = "Зашивровать";
+			ColumnButtonMake.Text = "Зашифровать";
 			ColumnButtonMake.UseVisualStyleBackColor = true;
 			ColumnButtonMake.Click += ColumnButtonMake_Click;
 			// 
@@ -172,7 +172,7 @@
 			VigenereButtonMake.Name = "VigenereButtonMake";
 			VigenereButtonMake.Size = new Size(123, 33);
 			VigenereButtonMake.TabIndex = 16;
-			VigenereButtonMake.Text = "Зашивровать";
+			VigenereButtonMake.Text = "Зашифровать";
 			VigenereButtonMake.UseVisualStyleBackColor = true;
 			VigenereButtonMake.Click += VigenereButtonMake_Click;
 			// 

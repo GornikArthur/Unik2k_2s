@@ -1,0 +1,9 @@
+﻿  Lab2_s.c
+C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\Lab2_s\Lab2_s.c(42,23): warning C4477: 'sscanf' : format string '%u' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'unsigned short *'
+      C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\Lab2_s\Lab2_s.c(42,23):
+      consider using '%hu' in the format string
+  
+C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\Lab2_s\Lab2_s.c(43,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\Lab2_s\Lab2_s.c(43,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
+C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\Lab2_s\Lab2_s.c(100,31): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  Lab2_s.vcxproj -> C:\Users\artur\Documents\Artur\Unik2k_2s\КСИС\Lab2\Prog_TCP\Lab2_s\Lab2_s\x64\Debug\Lab2_s.exe

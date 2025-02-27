@@ -1,0 +1,15 @@
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\bin\Debug\net8.0\ALG.exe
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\bin\Debug\net8.0\ALG.deps.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\bin\Debug\net8.0\ALG.runtimeconfig.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\bin\Debug\net8.0\ALG.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\bin\Debug\net8.0\ALG.pdb
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.AssemblyInfoInputs.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.AssemblyInfo.cs
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.csproj.CoreCompileInputs.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.sourcelink.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\refint\ALG.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.pdb
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ALG.genruntimeconfig.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\ТИ\Lab1\algoritm\ALG\ALG\obj\Debug\net8.0\ref\ALG.dll

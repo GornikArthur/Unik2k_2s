@@ -47,3 +47,13 @@ C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные р�
 C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.CoreCompileInputs.cache
 C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
 C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.pdb
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.AssemblyReference.cache
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.MainForm.resources
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.cache
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.CoreCompileInputs.cache
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+C:\Users\artur\Documents\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb

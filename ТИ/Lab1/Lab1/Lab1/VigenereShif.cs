@@ -70,7 +70,7 @@ namespace Lab1
 
 				if (textPos == -1 || keyPos == -1) continue;
 
-				int decryptedPos = (textPos - keyPos + alphabet.Length) % alphabet.Length;
+				int decryptedPos = (textPos - keyPos + alphabetSize) % alphabetSize;
 				start_text.Append(alphabet[decryptedPos]);
 			}
 			return start_text.ToString();

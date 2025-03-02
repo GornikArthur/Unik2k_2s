@@ -1,40 +1,97 @@
-﻿using System.Windows;
+﻿using System.Text.Json.Serialization;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-
 namespace PaintWPF
 {
-	internal class MyRectangle : MyFigure
+	public class MyRectangle : MyFigure
 	{
-		private Rectangle rect;
-		private int start_x, start_y;
+		public double X { get; set; }
+		public double Y { get; set; }
+		public double Width { get; set; }
+		public double Height { get; set; }
+		public string StrokeColor { get; set; }
+		public int StrokeThickness { get; set; }
+		public string FillColor { get; set; } = "Transparent";
 
-		public MyRectangle(Point startPoint)
+		[JsonIgnore] // Исключаем объект WPF, так как он не сериализуемый
+		private Rectangle rect;
+
+		public MyRectangle() { }
+
+		public MyRectangle(Point startPoint, Color color, int thickness)
+		{
+			X = startPoint.X;
+			Y = startPoint.Y;
+			Width = 0;
+			Height = 0;
+			StrokeColor = color.ToString();
+			StrokeThickness = thickness;
+			InitializeRectangle();
+		}
+
+		private void InitializeRectangle()
 		{
 			rect = new Rectangle
 			{
-				Stroke = Brushes.Black,
-				StrokeThickness = 2,
+				Stroke = (SolidColorBrush)new BrushConverter().ConvertFromString(StrokeColor),
+				StrokeThickness = StrokeThickness,
+				Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(FillColor),
+				Width = Width,
+				Height = Height
+
 			};
-			start_x = (int)startPoint.X;
-			start_y = (int)startPoint.Y;
-			Canvas.SetLeft(rect, startPoint.X);
-			Canvas.SetTop(rect, startPoint.Y);
+			Canvas.SetLeft(rect, X);
+			Canvas.SetTop(rect, Y);
 		}
 
-		public void Calc(Point newPoint)
+		public override void Calc(Point newPoint)
 		{
-			Canvas.SetLeft(rect, Math.Min(this.start_x, newPoint.X));
-			Canvas.SetTop(rect, Math.Min(this.start_y, newPoint.Y));
-			rect.Width = Math.Abs(newPoint.X - this.start_x);
-			rect.Height = Math.Abs(newPoint.Y - this.start_y);
+			X = Math.Min(X, newPoint.X);
+			Y = Math.Min(Y, newPoint.Y);
+			Width = Math.Abs(newPoint.X - X);
+			Height = Math.Abs(newPoint.Y - Y);
+
+			if (rect != null)
+			{
+				Canvas.SetLeft(rect, X);
+				Canvas.SetTop(rect, Y);
+				rect.Width = Width;
+				rect.Height = Height;
+			}
 		}
 
 		public Rectangle GetFigure()
 		{
+			if (rect == null) InitializeRectangle();
 			return rect;
+		}
+
+		public override bool IsPointInside(Point point)
+		{
+			return point.X >= X && point.X <= X + Width && point.Y >= Y && point.Y <= Y + Height;
+		}
+
+		public override void SetFillColor(Color color)
+		{
+			FillColor = color.ToString();
+			if (rect != null)
+			{
+				rect.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(FillColor);
+			}
+		}
+
+		public override void RemoveFigure(Canvas canvas)
+		{
+			canvas.Children.Remove(rect);
+		}
+
+		public override void AddFigure(Canvas canvas)
+		{
+			if (rect == null) InitializeRectangle();
+			canvas.Children.Add(rect);
 		}
 	}
 }

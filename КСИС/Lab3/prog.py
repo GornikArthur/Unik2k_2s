@@ -5,7 +5,7 @@ import time
 PORT = 5000
 TCP_PORT = 6000
 BUFFER_SIZE = 1024
-my_ip = "192.168.1.102"
+my_ip = "192.168.1.103"
 user_list = set()  # Уникальные пользователи
 continue_signal = True
 
@@ -40,7 +40,7 @@ def send_broadcast():
     while continue_signal:
         try:
             client_socket.sendto("".encode(), broadcast_address)
-            time.sleep(5)
+            time.sleep(2)
         except:
             break
     client_socket.close()
@@ -78,7 +78,7 @@ def tcp_server():
             server_socket.listen(1)
             conn, addr = server_socket.accept()
             data = conn.recv(BUFFER_SIZE).decode()
-            print(f"{data}({addr})")
+            print(f"{data}({addr[0]})")
             conn.close()
         except:
             break

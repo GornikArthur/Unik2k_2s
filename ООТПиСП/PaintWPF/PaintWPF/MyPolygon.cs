@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -21,11 +22,13 @@ namespace PaintWPF
 		[JsonIgnore] // Не сериализуем сам WPF-объект
 		private Polygon polygon;
 
+		public static MyPolygon my_polygon = null;
+
 		public MyPolygon() { } // Пустой конструктор для десериализации
 
-		public MyPolygon(Point startPoint, Color selectedColor, int thickness)
+		public MyPolygon(Point startPoint, Color selectedColor, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures)
 		{
-			MyLine new_line = new MyLine(startPoint, selectedColor, thickness);
+			MyLine new_line = new MyLine(startPoint, selectedColor, thickness, Paint_canvas, arr_figures);
 			arr_lines.Add(new_line);
 			StrokeColor = selectedColor.ToString();
 			StrokeThickness = thickness;
@@ -35,6 +38,9 @@ namespace PaintWPF
 		{
 			arr_lines[last_line].line.X2 = newPoint.X;
 			arr_lines[last_line].line.Y2 = newPoint.Y;
+
+			arr_lines[0].line.X2 = newPoint.X;
+			arr_lines[0].line.Y2 = newPoint.Y;
 		}
 
 		public MyLine GetLineByIndex(int index)
@@ -48,7 +54,7 @@ namespace PaintWPF
 			arr_lines.Add(new_line);
 		}
 
-		public void make_Polygon(Canvas Paint_canvas, Color color, int thickness)
+		public void Make_Polygon(Canvas Paint_canvas, Color color, int thickness)
 		{
 			Points.Clear();
 			Points.Add(new Point(arr_lines[0].line.X1, arr_lines[0].line.Y1));
@@ -121,6 +127,52 @@ namespace PaintWPF
 		{
 			if (polygon == null) InitializePolygon();
 			canvas.Children.Add(polygon);
+		}
+		public override void MouseMove(Point pos, Canvas Paint_canvas, List<MyFigure> arr_figures)
+		{
+			if (my_polygon != null && my_polygon.GetLineByIndex(my_polygon.last_line) != null)
+			{
+				my_polygon.GetLineByIndex(my_polygon.last_line).Calc(pos);
+			}
+		}
+		public static MyLine CreatePolygonLine(Point pos, Color color, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures)
+		{
+			// Создаём полигон, если его ещё нет
+			if (my_polygon == null)
+			{
+				my_polygon = new MyPolygon(pos, color, thickness, Paint_canvas, arr_figures);
+
+				// Добавляем первую линию полигона, только если её ещё нет на холсте
+				var firstLine = my_polygon.GetLineByIndex(0).GetFigure();
+				if (!Paint_canvas.Children.Contains(firstLine))
+				{
+					Paint_canvas.Children.Add(firstLine);
+				}
+			}
+
+			// Создаём новую линию для полигона
+			MyLine line = new MyLine(pos, color, thickness, Paint_canvas, arr_figures);
+			my_polygon.AddLine(line);
+
+			// Добавляем новую линию только если её ещё нет на холсте
+			var newLine = my_polygon.GetLineByIndex(my_polygon.last_line).GetFigure();
+			if (!Paint_canvas.Children.Contains(newLine))
+			{
+				Paint_canvas.Children.Add(newLine);
+			}
+
+			return line;
+		}
+		public static bool FinishPolygon(Color color, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures, Key key)
+		{
+			if (my_polygon != null && key == Key.Escape)
+			{
+				my_polygon.Make_Polygon(Paint_canvas, color, thickness);
+				arr_figures.Add(my_polygon);
+				my_polygon = null;
+				return false;
+			}
+			return true;
 		}
 	}
 }

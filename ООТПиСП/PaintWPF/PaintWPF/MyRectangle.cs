@@ -1,6 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -21,7 +22,7 @@ namespace PaintWPF
 
 		public MyRectangle() { }
 
-		public MyRectangle(Point startPoint, Color color, int thickness)
+		public MyRectangle(Point startPoint, Color color, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures)
 		{
 			X = startPoint.X;
 			Y = startPoint.Y;
@@ -30,6 +31,9 @@ namespace PaintWPF
 			StrokeColor = color.ToString();
 			StrokeThickness = thickness;
 			InitializeRectangle();
+
+			Paint_canvas.Children.Add(this.GetFigure());
+			arr_figures.Add(this);
 		}
 
 		private void InitializeRectangle()
@@ -92,6 +96,10 @@ namespace PaintWPF
 		{
 			if (rect == null) InitializeRectangle();
 			canvas.Children.Add(rect);
+		}
+		public override void MouseMove(Point pos, Canvas Paint_canvas, List<MyFigure> arr_figures)
+		{
+			arr_figures[arr_figures.Count - 1].Calc(pos);
 		}
 	}
 }

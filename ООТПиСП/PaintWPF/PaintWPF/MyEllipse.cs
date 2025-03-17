@@ -2,6 +2,7 @@
 using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -22,7 +23,7 @@ namespace PaintWPF
 
 		public MyEllipse() { }
 
-		public MyEllipse(Point startPoint, Color color, int thickness)
+		public MyEllipse(Point startPoint, Color color, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures)
 		{
 			X = startPoint.X;
 			Y = startPoint.Y;
@@ -31,6 +32,9 @@ namespace PaintWPF
 			StrokeColor = color.ToString();
 			StrokeThickness = thickness;
 			InitializeEllipse();
+
+			Paint_canvas.Children.Add(this.GetFigure());
+			arr_figures.Add(this);
 		}
 
 		private void InitializeEllipse()
@@ -98,6 +102,10 @@ namespace PaintWPF
 		{
 			if (ellip == null) InitializeEllipse();
 			canvas.Children.Add(ellip);
+		}
+		public override void MouseMove(Point pos, Canvas Paint_canvas, List<MyFigure> arr_figures)
+		{
+			arr_figures[arr_figures.Count - 1].Calc(pos);
 		}
 	}
 }

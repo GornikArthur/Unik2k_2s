@@ -9,6 +9,7 @@ using System.IO;
 using Microsoft.Win32;
 using System.Xml.Serialization;
 using System.Numerics;
+using System.Windows.Navigation;
 
 namespace PaintWPF
 {
@@ -26,11 +27,38 @@ namespace PaintWPF
 		private List<MyFigure> arr_figures = new List<MyFigure>();
 		private bool isDrawing = false;
 		private Figure chose_figure = Figure.FLine;
-		private MyBrokenLine broken_line;
-		private MyPolygon my_polygon;
 		private int thickness = 1;
 		private Color selectedColor;
 		private bool selectedFillColor;
+
+		public delegate MyFigure FigureCreator(Point startPoint, Color color, int thickness, Canvas paint_canvas, List<MyFigure> arr);
+		private Dictionary<Figure, FigureCreator> figureCreators = new Dictionary<Figure, FigureCreator>()
+		{
+			{ Figure.FLine, (startPoint, color, thickness, paint_canvas, arr) => 
+			new MyLine(startPoint, color, thickness, paint_canvas, arr) },
+
+			{ Figure.FRectangle, (startPoint, color, thickness, paint_canvas, arr) => 
+			new MyRectangle(startPoint, color, thickness, paint_canvas, arr) },
+
+			{ Figure.FEllipse, (startPoint, color, thickness, paint_canvas, arr) =>
+			new MyEllipse(startPoint, color, thickness, paint_canvas, arr) },
+
+			{ Figure.FBrokenLine, (startPoint, color, thickness, paint_canvas, arr) =>
+			MyBrokenLine.CreatingLine(startPoint, color, thickness, paint_canvas, arr) },
+
+			{ Figure.FPolygon, (startPoint, color, thickness, paint_canvas, arr) =>
+			MyPolygon.CreatePolygonLine(startPoint, color, thickness, paint_canvas, arr) }
+		};
+
+		public delegate bool FigureFinisher(Color color, int thickness, Canvas paint_canvas, List<MyFigure> arr, Key key);
+		private Dictionary<Figure, FigureFinisher> figureFinishers = new Dictionary<Figure, FigureFinisher>()
+		{
+			{ Figure.FLine, (color, thickness, canvas, arr, key) => false },
+			{ Figure.FRectangle, (color, thickness, canvas, arr, key) => false },
+			{ Figure.FEllipse, (color, thickness, canvas, arr, key) => false },
+			{ Figure.FBrokenLine, (color, thickness, canvas, arr, key) => MyBrokenLine.FinishBrokenLine(arr, key) },
+			{ Figure.FPolygon, (color, thickness, canvas, arr, key) => MyPolygon.FinishPolygon(color, thickness, canvas, arr, key) }
+		};
 
 		public MainWindow()
 		{
@@ -69,6 +97,12 @@ namespace PaintWPF
 		private void MainWindow_MouseDown(object sender, MouseButtonEventArgs e)
 		{
 			if (selectedFillColor) return;
+			if (figureCreators.ContainsKey(chose_figure))
+			{
+				MyFigure figure = figureCreators[chose_figure](e.GetPosition(Paint_canvas), selectedColor, thickness, Paint_canvas, arr_figures);
+				isDrawing = true;
+			}
+			/*if (selectedFillColor) return;
 			switch (chose_figure)
 			{
 				case Figure.FLine:
@@ -119,12 +153,20 @@ namespace PaintWPF
 					}
 				default:
 					break;
-			}
+			}*/
 		}
 
 		private void MainWindow_MouseMove(object sender, MouseEventArgs e)
 		{
 			if (isDrawing)
+			{
+				arr_figures[arr_figures.Count - 1].MouseMove(e.GetPosition(Paint_canvas), Paint_canvas, arr_figures);
+				if (chose_figure == Figure.FPolygon && MyPolygon.my_polygon != null && MyPolygon.my_polygon.GetLineByIndex(MyPolygon.my_polygon.last_line) != null)
+				{
+					MyPolygon.my_polygon.GetLineByIndex(0).Calc(e.GetPosition(Paint_canvas));
+				}
+			}
+			/*if (isDrawing)
 			{
 				switch (chose_figure)
 				{
@@ -149,38 +191,26 @@ namespace PaintWPF
 					default:
 						break;
 				}
-			}
+			}*/
 		}
-
 		private void MainWindow_MouseUp(object sender, MouseButtonEventArgs e)
 		{
-			if (chose_figure == Figure.FLine || chose_figure == Figure.FRectangle || chose_figure == Figure.FEllipse) isDrawing = false;
+			if (arr_figures.Count > 0) isDrawing = figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, Key.None);
 		}
 
 		private void MainWindow_KeyDown(object sender, KeyEventArgs e)
 		{
-			if ((chose_figure == Figure.FBrokenLine || chose_figure == Figure.FPolygon) && e.Key == Key.Escape)
+			if (arr_figures.Count > 0)
 			{
-				if (chose_figure == Figure.FBrokenLine)
-				{
-					arr_figures.Add(broken_line);
-					broken_line = null;
-				}
-				else
-				{
-					my_polygon.make_Polygon(Paint_canvas, selectedColor, thickness);
-					arr_figures.Add(my_polygon);
-					my_polygon = null;
-				}
-				isDrawing = false;
-			}
+				figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, e.Key);
 
-			if (!isDrawing && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
-			{
-				if (e.Key == Key.Z)
+				if (!isDrawing && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
 				{
-					arr_figures[arr_figures.Count-1].RemoveFigure(Paint_canvas);
-					arr_figures.Remove(arr_figures[arr_figures.Count - 1]);
+					if (e.Key == Key.Z)
+					{
+						arr_figures[arr_figures.Count - 1].RemoveFigure(Paint_canvas);
+						arr_figures.Remove(arr_figures[arr_figures.Count - 1]);
+					}
 				}
 			}
 		}
@@ -204,27 +234,27 @@ namespace PaintWPF
 		{
 			selectedFillColor = !selectedFillColor;
 		}
-
 		private void Paint_canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
 			if (selectedFillColor)
 			{
-				foreach (MyFigure fig in arr_figures)
+				for (int i = arr_figures.Count - 1; i >= 0; i--)
 				{
-					if (fig.IsPointInside(e.GetPosition(Paint_canvas)))
+					if (arr_figures[i].IsPointInside(e.GetPosition(Paint_canvas)))
 					{
-						fig.SetFillColor(selectedColor);
+						arr_figures[i].SetFillColor(selectedColor);
+						break;
 					}
 				}
 			}
 		}
+		
 		private void SaveFigures(string filePath)
 		{
 			var options = new JsonSerializerOptions { WriteIndented = true };
 			string json = JsonSerializer.Serialize(arr_figures, options);
 			File.WriteAllText(filePath, json);
 		}
-
 		private void LoadFigures(string filePath)
 		{
 			if (!File.Exists(filePath)) return;
@@ -239,7 +269,6 @@ namespace PaintWPF
 				figure.AddFigure(Paint_canvas); // Добавляем фигуры обратно
 			}
 		}
-
 		private void LoadButton_Click(object sender, RoutedEventArgs e)
 		{
 			var dialog = new Microsoft.Win32.OpenFileDialog();
@@ -249,7 +278,6 @@ namespace PaintWPF
 				LoadFigures(file_name);
 			}
 		}
-
 		private void SaveButton_Click(object sender, RoutedEventArgs e)
 		{
 			var dialog = new Microsoft.Win32.SaveFileDialog();

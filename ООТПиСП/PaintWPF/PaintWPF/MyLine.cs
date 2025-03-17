@@ -1,6 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
@@ -22,7 +24,7 @@ namespace PaintWPF
 		// 🔹 Конструктор без параметров для JSON-десериализации
 		public MyLine() { }
 
-		public MyLine(Point startPoint, Color color, int thickness)
+		public MyLine(Point startPoint, Color color, int thickness, Canvas Paint_canvas, List<MyFigure> arr_figures)
 		{
 			X1 = startPoint.X;
 			Y1 = startPoint.Y;
@@ -31,6 +33,9 @@ namespace PaintWPF
 			StrokeColor = color.ToString(); // Сохраняем цвет в строковом формате
 			StrokeThickness = thickness;
 			InitializeLine(); // Создаём фигуру
+
+			Paint_canvas.Children.Add(this.GetFigure());
+			arr_figures.Add(this);
 		}
 
 		// 🔹 Метод для создания линии на основе свойств
@@ -84,6 +89,10 @@ namespace PaintWPF
 		{
 			if (line == null) InitializeLine(); // Гарантируем, что объект создан
 			canvas.Children.Add(line);
+		}
+		public override void MouseMove(Point pos, Canvas Paint_canvas, List<MyFigure> arr_figures)
+		{
+			arr_figures[arr_figures.Count - 1].Calc(pos);
 		}
 	}
 }

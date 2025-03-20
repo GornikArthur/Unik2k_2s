@@ -53,8 +53,7 @@
               "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml",
               "RelativeToolTip": "PaintWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-15T10:44:58.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T10:44:58.387Z"
             },
             {
               "$type": "Document",
@@ -64,7 +63,7 @@
               "RelativeDocumentMoniker": "PaintWPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "PaintWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwPUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAYwPUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:44:56.843Z",
               "EditorCaption": ""
@@ -79,8 +78,7 @@
               "RelativeToolTip": "PaintWPF\\MyBrokenLine.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAqwEcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:05:25.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T12:05:25.729Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "PaintWPF\\MyPolygon.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAA2wIQAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:27:10.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T12:27:10.836Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "PaintWPF\\MyFigure.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:55:20.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T19:55:20.867Z"
             },
             {
               "$type": "Document",
@@ -118,8 +114,7 @@
               "RelativeToolTip": "PaintWPF\\MyLine.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAUwGAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:38:27.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T11:38:27.2Z"
             },
             {
               "$type": "Document",
@@ -131,8 +126,7 @@
               "RelativeToolTip": "PaintWPF\\MyRectangle.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAIwGcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:49:46.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T11:49:46.614Z"
             },
             {
               "$type": "Document",
@@ -144,8 +138,7 @@
               "RelativeToolTip": "PaintWPF\\MyEllipse.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAAAqwG0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:02:41.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T12:02:41.614Z"
             }
           ]
         }

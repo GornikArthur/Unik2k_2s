@@ -1,0 +1,7 @@
+C:\Users\artur\Desktop\MYLAB\Lab1.pdb
+C:\Users\artur\Desktop\MYLAB\D3DCompiler_47_cor3.dll
+C:\Users\artur\Desktop\MYLAB\PenImc_cor3.dll
+C:\Users\artur\Desktop\MYLAB\PresentationNative_cor3.dll
+C:\Users\artur\Desktop\MYLAB\vcruntime140_cor3.dll
+C:\Users\artur\Desktop\MYLAB\wpfgfx_cor3.dll
+C:\Users\artur\Desktop\MYLAB\Lab1.exe

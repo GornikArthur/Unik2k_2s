@@ -4,7 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0c3793e-003c-4f42-a48f-93c00f9e78da" name="Changes" comment="" />
+    <list default="true" id="e0c3793e-003c-4f42-a48f-93c00f9e78da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/FileContentIndex/5e66a29a-cc57-4156-aa52-fbfadafaf084.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/FileContentIndex/dcb0af25-e283-4fd0-9cee-c0d83736df06.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/FileContentIndex/ea78dc57-37bf-411f-9b94-66add13e4de9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/Lab1/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/.vs/ProjectEvaluation/lab1.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/Lab1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/Lab1.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/bin/Debug/net8.0-windows/Lab2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab1.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.Fody.CopyLocal.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.Fody.RuntimeCopyLocal.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/Lab2.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/ref/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/ref/Lab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/refint/Lab2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Debug/net8.0-windows/refint/Lab2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Lab2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/Lab2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Lab2/Lab1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Тесты/Группа крови.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Тесты/Группа крови.mp3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,40 +69,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GornikArthur"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GornikArthur&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/GornikArthur/Unik2k_2s.git",
-    "accountId": "b7671a6a-28f0-4f1e-b41b-9f8a766160a4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GornikArthur/Unik2k_2s.git&quot;,
+    &quot;accountId&quot;: &quot;b7671a6a-28f0-4f1e-b41b-9f8a766160a4&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ugDlrMC2ThB4qedXXstYzuv8Nu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/artur/Documents/Artur/Unik2k_2s/ТИ/Lab2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artur/Documents/Artur/Unik2k_2s/ТИ/Lab2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,6 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742661477759</updated>
       <workItem from="1742661478849" duration="3145000" />
+      <workItem from="1742792918373" duration="54000" />
     </task>
     <servers />
   </component>

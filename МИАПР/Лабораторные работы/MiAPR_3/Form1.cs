@@ -159,5 +159,10 @@ namespace MiAPR_3
                     bufferedGraphics.Render();
                 }
         }
-    }
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

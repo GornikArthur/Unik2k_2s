@@ -1,0 +1,5 @@
+C:\Users\artur\Desktop\Lab1.exe
+C:\Users\artur\Desktop\Lab1.dll
+C:\Users\artur\Desktop\Lab1.runtimeconfig.json
+C:\Users\artur\Desktop\Lab1.pdb
+C:\Users\artur\Desktop\Lab1.deps.json

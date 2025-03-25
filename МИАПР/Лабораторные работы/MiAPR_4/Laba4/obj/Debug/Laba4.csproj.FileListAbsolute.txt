@@ -22,3 +22,13 @@ F:\Лабы\МиАПР\MiAPR_4\Laba4\obj\Debug\Laba4.csprojResolveAssemblyRefere
 F:\Лабы\МиАПР\MiAPR_4\Laba4\obj\Debug\Laba4.Form1.resources
 F:\Лабы\МиАПР\MiAPR_4\Laba4\obj\Debug\Laba4.Properties.Resources.resources
 F:\Лабы\МиАПР\MiAPR_4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.Cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\bin\Debug\Laba4.exe.config
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\bin\Debug\Laba4.exe
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\bin\Debug\Laba4.pdb
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.csproj.AssemblyReference.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.Form1.resources
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.Properties.Resources.resources
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.csproj.GenerateResource.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.csproj.CoreCompileInputs.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.exe
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_4\Laba4\obj\Debug\Laba4.pdb

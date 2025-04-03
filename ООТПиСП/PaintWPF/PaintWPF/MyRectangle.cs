@@ -1,9 +1,16 @@
 ﻿using System.Text.Json.Serialization;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.IO;
+using Microsoft.Win32;
+using System.Xml.Serialization;
+using System.Numerics;
+using System.Windows.Navigation;
 
 namespace PaintWPF
 {
@@ -101,5 +108,28 @@ namespace PaintWPF
 		{
 			arr_figures[arr_figures.Count - 1].Calc(pos);
 		}
+		public override int UndoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			RemoveFigure(canvas);
+			cur_action_pos--;
+			return cur_action_pos;
+		}
+		public override int RedoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			AddFigure(canvas);
+			cur_action_pos++;
+			return cur_action_pos;
+		}
+
+		public override bool AreEqualFigures(MyFigure fig1, MyFigure fig2)
+		{
+			if (fig1.GetType() != fig2.GetType()) return false;
+			System.Windows.Shapes.Rectangle сfig1 = ((MyRectangle)fig1).GetFigure();
+			System.Windows.Shapes.Rectangle сfig2 = ((MyRectangle)fig2).GetFigure();
+
+			if (сfig1.Width != сfig2.Width || сfig1.Height != сfig2.Height || Canvas.GetLeft(сfig1) != Canvas.GetLeft(сfig2) || Canvas.GetTop(сfig1) != Canvas.GetTop(сfig2)) return false;
+			return true;
+		}
+
 	}
 }

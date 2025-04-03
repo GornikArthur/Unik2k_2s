@@ -47,6 +47,11 @@ namespace PaintWPF
 		{
 			return arr_lines[index];
 		}
+		public Polygon GetFigure()
+		{
+			if (polygon != null) return polygon;
+			return null;
+		}
 
 		public void AddLine(MyLine new_line)
 		{
@@ -54,7 +59,7 @@ namespace PaintWPF
 			arr_lines.Add(new_line);
 		}
 
-		public void Make_Polygon(Canvas Paint_canvas, Color color, int thickness)
+		public void Make_Polygon(Canvas Paint_canvas, List<MyFigure> arr_figures,  Color color, int thickness)
 		{
 			Points.Clear();
 			Points.Add(new Point(arr_lines[0].line.X1, arr_lines[0].line.Y1));
@@ -66,6 +71,7 @@ namespace PaintWPF
 			foreach (var line in arr_lines)
 			{
 				Paint_canvas.Children.Remove(line.GetFigure());
+				arr_figures.Remove(line);
 			}
 
 			arr_lines.Clear();
@@ -167,10 +173,36 @@ namespace PaintWPF
 		{
 			if (my_polygon != null && key == Key.Escape)
 			{
-				my_polygon.Make_Polygon(Paint_canvas, color, thickness);
+				my_polygon.Make_Polygon(Paint_canvas, arr_figures, color, thickness);
 				arr_figures.Add(my_polygon);
 				my_polygon = null;
 				return false;
+			}
+			return true;
+		}
+		public override int UndoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			this.RemoveFigure(canvas);
+			cur_action_pos--;
+			return cur_action_pos;
+		}
+		public override int RedoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			this.AddFigure(canvas);
+			cur_action_pos++;
+			return cur_action_pos;
+		}
+		public override bool AreEqualFigures(MyFigure fig1, MyFigure fig2)
+		{
+			if (fig1.GetType() != fig2.GetType()) return false;
+			Polygon сfig1 = ((MyPolygon)fig1).GetFigure();
+			Polygon сfig2 = ((MyPolygon)fig2).GetFigure();
+
+			if (сfig1.Points.Count != сfig2.Points.Count) return false;
+
+			for (int i = 0; i < сfig1.Points.Count - 1; i++)
+			{
+				if (сfig1.Points[i] != сfig2.Points[i]) return false;
 			}
 			return true;
 		}

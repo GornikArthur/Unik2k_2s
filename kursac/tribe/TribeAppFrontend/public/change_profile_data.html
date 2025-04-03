@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="change_profile_data_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Edit Profile</h2>
+            <div class="profile-pic">
+                <img src="../img/default-profile.jpg" alt="Profile Picture">
+                <button class="edit-btn" id="load-btn">Load</button>
+            </div>
+        </header>
+        
+        <section class="info">
+            <div class="field">
+                Name: <input class="choose-data" type="text" placeholder="Enter your name">
+            </div>
+        
+            <div class="select-field">
+                <label for="country">Country:</label>
+                <select class="choose-data" id="country">
+                    <option value="Армения">Albania</option>
+                </select>
+            </div>
+        
+            <div class="select-field">
+                <label for="city">City:</label>
+                <select class="choose-data" id="city">
+                    <option value="">Elbasan</option>
+                </select>
+            </div>
+        
+            <div class="select-field">
+                Age:
+                <select class="choose-data" id="age">
+                    <option value="18">18</option>
+                </select>
+            </div>
+        </section>
+        
+        <div class="edit-info">
+            <button class="edit-btn" id="cancel-btn">Cancel</button>
+            <button class="edit-btn" id="save-btn">Save</button>
+        </div>        
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item"><img src="../img/heart.png" alt="Heart Picture"></a>
+            <a href="#" class="nav-item"><img src="../img/search.png" alt="Heart Picture"></a>
+            <a href="#" class="nav-item"><img src="../img/Profile.png" alt="Heart Picture"></a>
+        </nav>
+    </div>
+    <script type="module" src="get_place.js"></script>
+
+</body>
+</html>

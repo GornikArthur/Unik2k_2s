@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    min-height: 98vh;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 80vw;
+    background: white;
+    border-radius: 1.3vw;
+    box-shadow: 0 0.18vw 0.92vw rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1.3vw;
+    margin-top: 2vw;
+    margin-bottom: 12vw; /* Доsбавляем отступ, чтобы контейнер не залезал под bottom-nav */
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 5;
+    padding: 0;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EFEFF4;
+    padding: 1.3vw;
+    padding-bottom: 0.8vw;
+    border-radius: 1.3vw;    
+}
+
+.profile-pic {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1.3vw;
+    padding: 3vw;
+    padding-top: 0;
+}
+
+.profile-pic img {
+    width: 7.4vw;
+    height: 7.4vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-pic a {
+    color: #007AFF;
+    text-decoration: none;
+}
+
+.edit-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.92vw;
+    width: 50%;
+}
+
+.edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4CAF50, #1b7a44);
+    color: white;
+    font-weight: bold;
+    padding: 1.11vw 1.85vw;
+    border: none;
+    border-radius: 2.31vw;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    box-shadow: 0 0.37vw 0.92vw rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 100%;
+    margin: 0.92vw auto;
+}
+
+.edit-btn:active {
+    transform: scale(0.98); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+    box-shadow: 0 0.18vw 0.46vw rgba(0, 0, 0, 0.3) inset;
+}
+
+.field {
+    background: white;
+    padding: 0.92vw;
+    border-radius: 1.85vw;
+    box-shadow: 0 0.18vw 0.46vw rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0.92vw;
+}
+
+.interests {
+    background: #EFEFF4;
+    padding: 1.3vw;
+    padding-bottom: 0;
+    border-radius: 1.3vw;
+    margin-top: 0.92vw;
+    flex: 1;
+}
+
+.interests h3 {
+    margin-top: 0;
+    margin-bottom: 0.92vw;
+}
+
+.interest {
+    background: white;
+    border-radius: 0.92vw;
+    padding: 0.92vw;
+    box-shadow: 0 0.18vw 0.46vw rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.92vw;
+}
+
+.interest-title {
+    display: inline-block;
+    background: #007AFF;
+    color: white;
+    padding-top: 0.92vw;
+    padding-bottom: 0.92vw;
+    padding-left: 1.85vw;
+    padding-right: 1.85vw;
+    border-radius: 1.85vw;
+    width: 30vw;
+    text-align: center;
+}
+
+.edit-btn,
+.add-interest-btn {
+    font-size: inherit;
+}
+
+.add-interest-btn img{
+    height: 5vw;
+    width: auto;
+}
+
+.add-interest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, white, white); /* Градиент */
+    color: #007AFF;
+    font-weight: bold;
+    padding: 1.11vw 1.85vw;
+    border: none;
+    border-radius: 2.31vw;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    box-shadow: 0 0.37vw 0.92vw rgba(0, 0, 0, 0.2);
+    width: 60%;
+    max-width: 60%;
+    margin: 0.92vw auto;
+}
+
+.add-interest-btn:active {
+    transform: scale(0.98); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+    box-shadow: 0 0.18vw 0.46vw rgba(0, 0, 0, 0.3) inset;
+}
+
+.bottom-nav {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-around;
+    background: #EFEFF4;
+    width: 82.5vw; /* Ширина теперь 90% от экрана */
+    box-shadow: 0 -0.18vw 0.92vw rgba(0, 0, 0, 0.1);
+    border-radius: 2.77vw;
+    bottom: 0;
+    position: fixed;
+    left: 50%; /* Центрируем с помощью left */
+    transform: translateX(-50%); /* Сдвигаем обратно на 50% */
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+.bottom-nav img {
+    height: 4.62vw;
+    width: auto;
+    margin-top: 0.46vw;
+    padding-top: 0.92vw;
+    padding-bottom: 0.92vw;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    margin-bottom: 1.5vw;
+}
+
+.bottom-nav img:active {
+    transform: scale(0.85); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+}
+
+/* Общие стили для полей ввода */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 0.2vw solid #007AFF;
+    border-radius: 2vw;
+    font-size: 4vw;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"] {
+    width: 30vw;
+}
+
+/* Эффект при фокусе */
+input[type="text"]:focus, textarea:focus {
+    border-color: #007AFF;
+    box-shadow: 0 0 0.2vw rgba(0, 122, 255, 0.5);
+    outline: none;
+}
+
+#new-interest {
+    background: white;
+    border-radius: 0.92vw;
+    padding: 0.92vw;
+    margin-bottom: 0.92vw;
+    display: inline-block;
+    background: #007AFF;
+    color: white;
+    padding-top: 0.92vw;
+    padding-bottom: 0.92vw;
+    padding-left: 1.85vw;
+    padding-right: 1.85vw;
+    border-radius: 1.85vw;
+    width: 33.64vw;
+    height: 6.5vw;
+    text-align: center;
+    font-size: inherit;
+}
+
+#new-description {
+    height: 30vw;
+}
+
+.change-interest {
+    display: flex;
+    justify-content: space-between; /* Распределяет кнопки */
+    gap: 1vw; /* Расстояние между кнопками */
+    width: 100%; /* Убедимся, что контейнер занимает всю ширину */
+    margin-top: 0.92vw;
+}
+
+.change-interest-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4CAF50, #1b7a44);
+    color: white;
+    font-weight: bold;
+    padding: 1.11vw 1.85vw;
+    border: none;
+    border-radius: 2.31vw;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    box-shadow: 0 0.37vw 0.92vw rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 100%;
+    font-size: 3vw;
+}
+
+.change-interest-buttons:active {
+    transform: scale(0.98); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+    box-shadow: 0 0.18vw 0.46vw rgba(0, 0, 0, 0.3) inset;
+}
+
+#cancel-btn {
+    background: linear-gradient(135deg, #af4c4c, #7a1b1b);
+}
+
+.like-dislike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.like-dislike-buttons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.like-dislike-buttons img {
+    width: 13vw;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.like-dislike-buttons:active {
+    transform: scale(0.95);
+    opacity: 0.6;
+}
+
+
+

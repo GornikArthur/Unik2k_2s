@@ -10,6 +10,7 @@ using Microsoft.Win32;
 using System.Xml.Serialization;
 using System.Numerics;
 using System.Windows.Navigation;
+using System.ComponentModel;
 
 namespace PaintWPF
 {
@@ -25,6 +26,8 @@ namespace PaintWPF
 		}
 
 		private List<MyFigure> arr_figures = new List<MyFigure>();
+		private List<Action> arr_actions = new List<Action>();
+		private int cur_action_pos = 0;
 		private bool isDrawing = false;
 		private Figure chose_figure = Figure.FLine;
 		private int thickness = 1;
@@ -56,7 +59,7 @@ namespace PaintWPF
 			{ Figure.FLine, (color, thickness, canvas, arr, key) => false },
 			{ Figure.FRectangle, (color, thickness, canvas, arr, key) => false },
 			{ Figure.FEllipse, (color, thickness, canvas, arr, key) => false },
-			{ Figure.FBrokenLine, (color, thickness, canvas, arr, key) => MyBrokenLine.FinishBrokenLine(arr, key) },
+			{ Figure.FBrokenLine, (color, thickness, canvas, arr, key) => MyBrokenLine.FinishBrokenLine(color, thickness, canvas, arr, key) },
 			{ Figure.FPolygon, (color, thickness, canvas, arr, key) => MyPolygon.FinishPolygon(color, thickness, canvas, arr, key) }
 		};
 
@@ -102,58 +105,6 @@ namespace PaintWPF
 				MyFigure figure = figureCreators[chose_figure](e.GetPosition(Paint_canvas), selectedColor, thickness, Paint_canvas, arr_figures);
 				isDrawing = true;
 			}
-			/*if (selectedFillColor) return;
-			switch (chose_figure)
-			{
-				case Figure.FLine:
-					{
-						MyLine figure = new MyLine(e.GetPosition(Paint_canvas), selectedColor, thickness);
-						Paint_canvas.Children.Add(figure.GetFigure());
-						arr_figures.Add(figure);
-						isDrawing = true;
-						break;
-					}
-				case Figure.FRectangle:
-					{
-						MyRectangle figure = new MyRectangle(e.GetPosition(Paint_canvas), selectedColor, thickness);
-						Paint_canvas.Children.Add(figure.GetFigure());
-						arr_figures.Add(figure);
-						isDrawing = true;
-						break;
-					}
-				case Figure.FEllipse:
-					{
-						MyEllipse figure = new MyEllipse(e.GetPosition(Paint_canvas), selectedColor, thickness);
-						Paint_canvas.Children.Add(figure.GetFigure());
-						arr_figures.Add(figure);
-						isDrawing = true;
-						break;
-					}
-				case Figure.FBrokenLine:
-					{
-						if (broken_line == null) broken_line = new MyBrokenLine();
-						MyLine line = new MyLine(e.GetPosition(Paint_canvas), selectedColor, thickness);
-						broken_line.AddLine(line);
-						Paint_canvas.Children.Add(broken_line.GetLineByIndex(broken_line.last_line).GetFigure());
-						isDrawing = true;
-						break;
-					}
-				case Figure.FPolygon:
-					{
-						if (my_polygon == null)
-						{
-							my_polygon = new MyPolygon(e.GetPosition(Paint_canvas), selectedColor, thickness);
-							Paint_canvas.Children.Add(my_polygon.GetLineByIndex(0).GetFigure());
-						}
-						MyLine line = new MyLine(e.GetPosition(Paint_canvas), selectedColor, thickness);
-						my_polygon.AddLine(line);
-						Paint_canvas.Children.Add(my_polygon.GetLineByIndex(my_polygon.last_line).GetFigure());
-						isDrawing = true;
-						break;
-					}
-				default:
-					break;
-			}*/
 		}
 
 		private void MainWindow_MouseMove(object sender, MouseEventArgs e)
@@ -166,51 +117,43 @@ namespace PaintWPF
 					MyPolygon.my_polygon.GetLineByIndex(0).Calc(e.GetPosition(Paint_canvas));
 				}
 			}
-			/*if (isDrawing)
-			{
-				switch (chose_figure)
-				{
-					case Figure.FLine:
-					case Figure.FRectangle:
-					case Figure.FEllipse:
-						{
-							arr_figures[arr_figures.Count - 1].Calc(e.GetPosition(Paint_canvas));
-							break;
-						}
-					case Figure.FBrokenLine:
-						{
-							broken_line.GetLineByIndex(broken_line.last_line).Calc(e.GetPosition(Paint_canvas));
-							break;
-						}
-					case Figure.FPolygon:
-						{
-							my_polygon.GetLineByIndex(my_polygon.last_line).Calc(e.GetPosition(Paint_canvas));
-							my_polygon.GetLineByIndex(0).Calc(e.GetPosition(Paint_canvas));
-							break;
-						}
-					default:
-						break;
-				}
-			}*/
 		}
 		private void MainWindow_MouseUp(object sender, MouseButtonEventArgs e)
 		{
-			if (arr_figures.Count > 0) isDrawing = figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, Key.None);
+			if (arr_figures.Count > 0 && isDrawing)
+			{
+				isDrawing = figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, Key.None);
+				if (!isDrawing)
+				{
+					for (int i = cur_action_pos; i < arr_actions.Count;)
+					{
+						if (arr_actions[i] is MyFigure myFigure)
+						{
+							arr_figures.Remove(myFigure);
+						}
+						arr_actions.RemoveAt(i);
+					}
+					cur_action_pos++;
+					arr_actions.Add(arr_figures[arr_figures.Count-1]);
+				}
+			}
 		}
 
 		private void MainWindow_KeyDown(object sender, KeyEventArgs e)
 		{
-			if (arr_figures.Count > 0)
+			if (arr_figures.Count > 0 && isDrawing)
 			{
-				figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, e.Key);
-
-				if (!isDrawing && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+				isDrawing = figureFinishers[chose_figure](selectedColor, thickness, Paint_canvas, arr_figures, e.Key);
+				if (!isDrawing)
 				{
-					if (e.Key == Key.Z)
+
+					for (int i = cur_action_pos; i < arr_actions.Count;)
 					{
-						arr_figures[arr_figures.Count - 1].RemoveFigure(Paint_canvas);
-						arr_figures.Remove(arr_figures[arr_figures.Count - 1]);
+						arr_figures.Remove((MyFigure)arr_actions[i]);
+						arr_actions.RemoveAt(i);
 					}
+					cur_action_pos++;
+					arr_actions.Add(arr_figures[arr_figures.Count-1]);
 				}
 			}
 		}
@@ -242,7 +185,8 @@ namespace PaintWPF
 				{
 					if (arr_figures[i].IsPointInside(e.GetPosition(Paint_canvas)))
 					{
-						arr_figures[i].SetFillColor(selectedColor);
+						arr_actions.Add(new ActionFill(arr_figures[i], selectedColor));
+						cur_action_pos++;
 						break;
 					}
 				}
@@ -286,6 +230,34 @@ namespace PaintWPF
 				string file_name = dialog.FileName;
 				SaveFigures(file_name);
 			}
+		}
+
+		private void RedoButton_Click(object sender, RoutedEventArgs e)
+		{
+			if (!isDrawing && cur_action_pos < arr_actions.Count)
+			{
+				
+				arr_actions[cur_action_pos].RedoAction(Paint_canvas, cur_action_pos, arr_actions);
+				cur_action_pos++;
+				//arr_figures.Remove(arr_figures[arr_figures.Count - 1]);
+			}
+		}
+
+		private void UndoButton_Click(object sender, RoutedEventArgs e)
+		{
+			if (!isDrawing && cur_action_pos > 0)
+			{
+				arr_actions[--cur_action_pos].UndoAction(Paint_canvas, cur_action_pos, arr_actions);
+			}
+		}
+
+		private void RedoAllButton_Click(object sender, RoutedEventArgs e)
+		{
+			for (int i = cur_action_pos + 1; i < arr_figures.Count; i++)
+			{
+				arr_figures[i].AddFigure(Paint_canvas);
+			}
+			cur_action_pos = arr_figures.Count;
 		}
 	}
 }

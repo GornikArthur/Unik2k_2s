@@ -94,5 +94,26 @@ namespace PaintWPF
 		{
 			arr_figures[arr_figures.Count - 1].Calc(pos);
 		}
+		public override int UndoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			RemoveFigure(canvas);
+			cur_action_pos--;
+			return cur_action_pos;
+		}
+		public override int RedoAction(Canvas canvas, int cur_action_pos, List<Action> arr_actions)
+		{
+			AddFigure(canvas);
+			cur_action_pos++;
+			return cur_action_pos;
+		}
+		public override bool AreEqualFigures(MyFigure fig1, MyFigure fig2)
+		{
+			if (fig1.GetType() != fig2.GetType()) return false;
+			Line сfig1 = ((MyLine)fig1).GetFigure();
+			Line сfig2 = ((MyLine)fig2).GetFigure();
+
+			if (сfig1.X1 != сfig2.X1 || сfig1.X2 != сfig2.X2 || сfig1.Y1 != сfig2.Y1 || сfig1.Y2 != сfig2.Y2) return false;
+			return true;
+		}
 	}
 }

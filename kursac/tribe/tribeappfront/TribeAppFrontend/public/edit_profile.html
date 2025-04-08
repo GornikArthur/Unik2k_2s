@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="edit_prifile_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Edit Profile</h2>
+            <div class="profile-pic">
+                <img src="../img/default-profile.jpg" alt="Profile Picture">
+            </div>
+        </header>
+        
+        <section class="info">
+            <div class="field">Name</div>
+            <div class="field">Country</div>
+            <div class="field">City</div>
+            <div class="field">Age</div>
+        </section>
+
+        <div class="edit-info">
+            <button class="edit-btn">Edit Profile</button>
+        </div>        
+        
+        <section class="interests">
+            <h3>Interests</h3>
+            <div class="interest">
+                <span class="interest-title">Interest 1</span>
+                <p>Description</p>
+            </div>
+            <div class="interest">
+                <span class="interest-title">Interest 1</span>
+                <p>Description</p>
+            </div>
+            <div class="interest">
+                <input class="interest-title" id="new-interest" type="text" placeholder="Enter interest">
+                <textarea id="new-description"></textarea>
+            </div>
+            <div class="change-interest">
+                <button class="change-interest-buttons" id="save-btn">Save</button>
+                <button class="change-interest-buttons" id="cancel-btn">Cancle</button>
+            </div>  
+            <button class="add-interest-btn">
+                <img src="../img/add-interest.png" alt="Profile Picture">
+                New interest</button> 
+        </section>
+
+        <div class="like-dislike">
+            <button class="like-dislike-buttons" id="like-btn"><img src="../img/like.png" alt="Like Picture"></button>
+            <button class="like-dislike-buttons" id="dislike-btn"><img src="../img/dislike.png" alt="Disike Picture"></button>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item"><img src="../img/heart.png" alt="Heart Picture"></a>
+            <a href="#" class="nav-item"><img src="../img/search.png" alt="Heart Picture"></a>
+            <a href="#" class="nav-item"><img src="../img/Profile.png" alt="Heart Picture"></a>
+        </nav>
+    </div>
+</body>
+</html>

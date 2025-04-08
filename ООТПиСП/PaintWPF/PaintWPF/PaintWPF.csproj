@@ -15,6 +15,8 @@
     <None Remove="Line.png" />
     <None Remove="Polygon.png" />
     <None Remove="Rectangle.png" />
+    <None Remove="redo.png" />
+    <None Remove="undo.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +30,8 @@
     <Resource Include="Line.png" />
     <Resource Include="Polygon.png" />
     <Resource Include="Rectangle.png" />
+    <Resource Include="redo.png" />
+    <Resource Include="undo.png" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 80vw;
+    background: white;
+    border-radius: 1.3vw;
+    box-shadow: 0 0.18vw 0.92vw rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1.3vw;
+    margin-top: 2vw;
+    margin-bottom: 10vw; /* Доsбавляем отступ, чтобы контейнер не залезал под bottom-nav */
+}
+
+.data {
+    min-height: 88vh;
+    background: #EFEFF4;
+    padding: 1.3vw;
+    border-radius: 1.3vw;
+    margin-top: 0.92vh;
+}
+
+h2 {
+    margin: 0;
+    font-size: 8vw;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1.3vw;
+    border-radius: 4vw;
+    margin: 0.92vw auto;
+    width: 95%;
+    box-shadow: 0 0.37vw 0.92vw rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+    height: 9vw;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+
+.profile-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.profile-info p {
+    margin: 0.92vw 0;
+    font-size: 3vw;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info p::before {
+    margin-right: 0.92vw;
+}
+
+.telegram-icon {
+    width: 12vw;
+    height: auto;
+}
+
+.bottom-nav {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-around;
+    background: #EFEFF4;
+    width: 82.5vw; /* Ширина теперь 90% от экрана */
+    box-shadow: 0 -0.18vw 0.92vw rgba(0, 0, 0, 0.1);
+    border-radius: 2.77vw;
+    bottom: 0;
+    position: fixed;
+    left: 50%; /* Центрируем с помощью left */
+    transform: translateX(-50%); /* Сдвигаем обратно на 50% */
+}
+
+
+.nav-item {
+    text-decoration: none;
+}
+
+.bottom-nav img {
+    height: 4.62vw;
+    width: auto;
+    margin-top: 0.46vw;
+    padding-top: 0.92vw;
+    padding-bottom: 0.92vw;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.bottom-nav img:active {
+    transform: scale(0.85); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+}
+
+.visit-telegram {
+    text-decoration: none;
+}
+
+.visit-telegram img {
+    height: 10vw;
+    width: auto;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.visit-telegram img:active {
+    transform: scale(0.85); /* Уменьшаем сильнее */
+    opacity: 0.6; /* Затемняем */
+}

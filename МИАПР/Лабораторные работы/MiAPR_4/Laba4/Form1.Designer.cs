@@ -61,7 +61,7 @@
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.label1.Location = new System.Drawing.Point(212, 418);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(169, 20);
+			this.label1.Size = new System.Drawing.Size(204, 25);
 			this.label1.TabIndex = 6;
 			this.label1.Text = "Тестовая выборка:";
 			// 
@@ -69,9 +69,9 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-			this.label2.Location = new System.Drawing.Point(52, 9);
+			this.label2.Location = new System.Drawing.Point(7, 10);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(188, 20);
+			this.label2.Size = new System.Drawing.Size(226, 25);
 			this.label2.TabIndex = 7;
 			this.label2.Text = "Количество классов:";
 			// 
@@ -79,9 +79,9 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-			this.label3.Location = new System.Drawing.Point(266, 9);
+			this.label3.Location = new System.Drawing.Point(231, 10);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(279, 20);
+			this.label3.Size = new System.Drawing.Size(334, 25);
 			this.label3.TabIndex = 8;
 			this.label3.Text = "Количество объектов в классе:";
 			// 
@@ -91,7 +91,7 @@
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.label4.Location = new System.Drawing.Point(571, 10);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(284, 20);
+			this.label4.Size = new System.Drawing.Size(341, 25);
 			this.label4.TabIndex = 9;
 			this.label4.Text = "Количество признаков объекта:";
 			// 
@@ -99,21 +99,22 @@
 			// 
 			this.listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.listBox.FormattingEnabled = true;
-			this.listBox.ItemHeight = 20;
-			this.listBox.Location = new System.Drawing.Point(545, 117);
+			this.listBox.ItemHeight = 25;
+			this.listBox.Location = new System.Drawing.Point(563, 115);
 			this.listBox.Name = "listBox";
 			this.listBox.ScrollAlwaysVisible = true;
-			this.listBox.Size = new System.Drawing.Size(311, 284);
+			this.listBox.Size = new System.Drawing.Size(347, 279);
 			this.listBox.TabIndex = 10;
 			// 
 			// listBoxFunctions
 			// 
 			this.listBoxFunctions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
 			this.listBoxFunctions.FormattingEnabled = true;
+			this.listBoxFunctions.ItemHeight = 17;
 			this.listBoxFunctions.Location = new System.Drawing.Point(12, 118);
 			this.listBoxFunctions.Name = "listBoxFunctions";
 			this.listBoxFunctions.ScrollAlwaysVisible = true;
-			this.listBoxFunctions.Size = new System.Drawing.Size(527, 290);
+			this.listBoxFunctions.Size = new System.Drawing.Size(545, 276);
 			this.listBoxFunctions.TabIndex = 11;
 			// 
 			// button2
@@ -131,7 +132,7 @@
 			// 
 			this.textBox_Classes.Location = new System.Drawing.Point(118, 35);
 			this.textBox_Classes.Name = "textBox_Classes";
-			this.textBox_Classes.Size = new System.Drawing.Size(73, 29);
+			this.textBox_Classes.Size = new System.Drawing.Size(73, 35);
 			this.textBox_Classes.TabIndex = 13;
 			this.textBox_Classes.Text = "3";
 			this.textBox_Classes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Classes_KeyPress);
@@ -140,7 +141,7 @@
 			// 
 			this.textBox_Objects.Location = new System.Drawing.Point(381, 35);
 			this.textBox_Objects.Name = "textBox_Objects";
-			this.textBox_Objects.Size = new System.Drawing.Size(73, 29);
+			this.textBox_Objects.Size = new System.Drawing.Size(73, 35);
 			this.textBox_Objects.TabIndex = 14;
 			this.textBox_Objects.Text = "2";
 			this.textBox_Objects.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Classes_KeyPress);
@@ -149,7 +150,7 @@
 			// 
 			this.textBox_Attributes.Location = new System.Drawing.Point(689, 35);
 			this.textBox_Attributes.Name = "textBox_Attributes";
-			this.textBox_Attributes.Size = new System.Drawing.Size(73, 29);
+			this.textBox_Attributes.Size = new System.Drawing.Size(73, 35);
 			this.textBox_Attributes.TabIndex = 15;
 			this.textBox_Attributes.Text = "2";
 			this.textBox_Attributes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Classes_KeyPress);
@@ -163,6 +164,7 @@
 			this.dataGridView1.Location = new System.Drawing.Point(170, 443);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersVisible = false;
+			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.Size = new System.Drawing.Size(237, 43);
 			this.dataGridView1.TabIndex = 16;
 			this.dataGridView1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Classes_KeyPress);
@@ -171,7 +173,7 @@
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			this.ClientSize = new System.Drawing.Size(869, 502);
+			this.ClientSize = new System.Drawing.Size(922, 502);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.textBox_Attributes);
 			this.Controls.Add(this.textBox_Objects);

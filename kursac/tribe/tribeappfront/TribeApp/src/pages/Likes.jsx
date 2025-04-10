@@ -26,7 +26,7 @@ function Likes(){
         <div className="container">
             <h2>Likes</h2>
             <div className="data">
-                {users.map(user => <ContactCard user={user} key={user.id}/>)}
+                {users.map(user => <ContactCard user={user} key={user.id} displayTG={true}/>)}
                 <BottomNav />
             </div>
         </div>

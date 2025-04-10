@@ -11,7 +11,7 @@ function ContactCard({ user, displayTG }) {
                 <p>📍 {Country}, {City}</p>
             </div>
             {displayTG && <a href={TelegramLink || "#"} className="visit-telegram" target="_blank" rel="noopener noreferrer">
-                <img className="telegram-icon" src="/img/telegram.png" alt="Telegram" />
+                <img className="telegram-icon" src="img/telegram.png" alt="Telegram" />
             </a>}
         </div>
     );

@@ -5,6 +5,7 @@ import BasicInfo from '../components/BasicInfo';
 import InterestsInfo from '../components/InterestsInfo';
 import Header from '../components/Header';
 import AddNewInterest from '../components/AddNewInterest';
+import ChangeProfileData from '../components/ChangeProfileData';
 
 function Search() {
     const [showNewInterest, setShowNewInterest] = useState(false);
@@ -35,39 +36,53 @@ function Search() {
             Description: "I'm a Christian. I believe that both inner and outer strength matter."
         }
     ]);
+    const [showEditProfile, setShowEditProfile] = useState(false);
 
-    const user = {
+    const [user, setUser] = useState({
         Name: "Artur",
         Age: 25,
         Location: { Country: "Latvia", City: "Riga" },
         TelegramLink: "https://t.me/arturgornik",
         ProfilePicUrl: "/img/Profile.png"
+    });
+
+    const handleSaveUserData = (updatedUser) => {
+        setUser(updatedUser); 
+        setShowEditProfile(false); 
     };
 
+    const handleEditDataClick = () => setShowEditProfile(true); 
+    const handleEditDataCancel = () => setShowEditProfile(false);
     const handleAddInterestClick = () => setShowNewInterest(true);
-    const handleCancel = () => setShowNewInterest(false);
+    const handleAddInterestCancel = () => setShowNewInterest(false);
 
-    const handleSave = (newInterest) => {
+    const handleSaveNewInterest = (newInterest) => {
         setInterests([...interests, { ...newInterest, id: interests.length + 1 }]);
         setShowNewInterest(false);
     };
 
     return (
         <div className="container">
-            <Header image={user.ProfilePicUrl}/>
-            <BasicInfo user={user} />
-            <div className="edit-info">
-                <button className="edit-btn">Edit Profile</button>
-            </div>  
-            <InterestsInfo interests={interests} />
-            {!showNewInterest && (
-                <button className="add-interest-btn" onClick={handleAddInterestClick}>
-                    <img src="../img/add-interest.png" alt="Profile Picture" />
-                    New interest
-                </button>
-            )}
-            {showNewInterest && <AddNewInterest onSave={handleSave} onCancel={handleCancel} />}
-            <BottomNav />
+            {!showEditProfile && (<>
+                <Header image={user.ProfilePicUrl}/>
+                <BasicInfo user={user} />
+                <div className="edit-info">
+                    <button className="edit-btn" onClick={handleEditDataClick}>Edit Profile</button>
+                </div>  
+                <InterestsInfo interests={interests} />
+                {!showNewInterest && (
+                    <button className="add-interest-btn" onClick={handleAddInterestClick}>
+                        <img src="../img/add-interest.png" alt="Profile Picture" />
+                        New interest
+                    </button>
+                )}
+                {showNewInterest && <AddNewInterest onSave={handleSaveNewInterest} onCancel={handleAddInterestCancel} />}
+                <BottomNav />
+            </>)}
+            {showEditProfile && (<>
+                <ChangeProfileData user={user} onSave={handleSaveUserData} onCancel={handleEditDataCancel}/>
+                    
+            </>)}
         </div>
     );
 }

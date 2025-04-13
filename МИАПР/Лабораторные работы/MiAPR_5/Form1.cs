@@ -188,5 +188,10 @@ namespace MiAPR_5
 
             bufferedGraphics.Render();
         }
-    }
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

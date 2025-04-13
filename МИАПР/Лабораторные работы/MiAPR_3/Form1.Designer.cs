@@ -48,9 +48,9 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-			this.label1.Location = new System.Drawing.Point(879, 62);
+			this.label1.Location = new System.Drawing.Point(919, 62);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(59, 20);
+			this.label1.Size = new System.Drawing.Size(77, 25);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "P(C1):";
 			// 
@@ -58,9 +58,9 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-			this.label2.Location = new System.Drawing.Point(1061, 59);
+			this.label2.Location = new System.Drawing.Point(1088, 62);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(59, 20);
+			this.label2.Size = new System.Drawing.Size(77, 25);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "P(C2):";
 			// 
@@ -70,7 +70,7 @@
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.label3.Location = new System.Drawing.Point(882, 201);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(315, 20);
+			this.label3.Size = new System.Drawing.Size(386, 25);
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Вероятность ложной тревоги (Pлт):";
 			// 
@@ -80,7 +80,7 @@
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.label4.Location = new System.Drawing.Point(861, 284);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(369, 20);
+			this.label4.Size = new System.Drawing.Size(450, 25);
 			this.label4.TabIndex = 3;
 			this.label4.Text = "Вероятность пропуска обнаружения (Pпо):";
 			// 
@@ -90,56 +90,56 @@
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
 			this.label5.Location = new System.Drawing.Point(832, 360);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(417, 20);
+			this.label5.Size = new System.Drawing.Size(515, 25);
 			this.label5.TabIndex = 4;
 			this.label5.Text = "Суммарная вероятность классификации (Pсум):";
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(947, 56);
+			this.textBox1.Location = new System.Drawing.Point(1002, 62);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(52, 26);
+			this.textBox1.Size = new System.Drawing.Size(52, 30);
 			this.textBox1.TabIndex = 5;
 			this.textBox1.Text = "0,3";
 			this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(1120, 56);
+			this.textBox2.Location = new System.Drawing.Point(1171, 59);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(54, 26);
+			this.textBox2.Size = new System.Drawing.Size(54, 30);
 			this.textBox2.TabIndex = 6;
 			this.textBox2.Text = "0,7";
 			this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// textBox3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(954, 224);
+			this.textBox3.Location = new System.Drawing.Point(987, 229);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.ReadOnly = true;
-			this.textBox3.Size = new System.Drawing.Size(166, 26);
+			this.textBox3.Size = new System.Drawing.Size(166, 30);
 			this.textBox3.TabIndex = 7;
 			// 
 			// textBox4
 			// 
-			this.textBox4.Location = new System.Drawing.Point(957, 307);
+			this.textBox4.Location = new System.Drawing.Point(987, 312);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.ReadOnly = true;
-			this.textBox4.Size = new System.Drawing.Size(166, 26);
+			this.textBox4.Size = new System.Drawing.Size(166, 30);
 			this.textBox4.TabIndex = 8;
 			// 
 			// textBox5
 			// 
-			this.textBox5.Location = new System.Drawing.Point(956, 383);
+			this.textBox5.Location = new System.Drawing.Point(987, 388);
 			this.textBox5.Name = "textBox5";
 			this.textBox5.ReadOnly = true;
-			this.textBox5.Size = new System.Drawing.Size(166, 26);
+			this.textBox5.Size = new System.Drawing.Size(166, 30);
 			this.textBox5.TabIndex = 9;
 			// 
 			// button1
 			// 
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-			this.button1.Location = new System.Drawing.Point(875, 92);
+			this.button1.Location = new System.Drawing.Point(915, 95);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(310, 61);
 			this.button1.TabIndex = 10;
@@ -159,7 +159,7 @@
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			this.ClientSize = new System.Drawing.Size(1265, 452);
+			this.ClientSize = new System.Drawing.Size(1353, 452);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.textBox5);

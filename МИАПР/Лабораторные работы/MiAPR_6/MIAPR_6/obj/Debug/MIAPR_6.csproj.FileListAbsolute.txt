@@ -34,3 +34,13 @@ F:\Лабы\МиАПР\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.csprojResolveAssemblyRe
 F:\Лабы\МиАПР\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.Form1.resources
 F:\Лабы\МиАПР\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.Properties.Resources.resources
 F:\Лабы\МиАПР\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.csproj.GenerateResource.Cache
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\bin\Debug\MIAPR_6.exe.config
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\bin\Debug\MIAPR_6.exe
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\bin\Debug\MIAPR_6.pdb
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.csproj.AssemblyReference.cache
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.Form1.resources
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.Properties.Resources.resources
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.csproj.GenerateResource.cache
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.csproj.CoreCompileInputs.cache
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.exe
+C:\Users\artur\OneDrive\Dokumente\unik\Unik2k_2s\МИАПР\Лабораторные работы\MiAPR_6\MIAPR_6\obj\Debug\MIAPR_6.pdb

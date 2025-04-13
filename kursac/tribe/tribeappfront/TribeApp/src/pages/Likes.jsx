@@ -1,32 +1,22 @@
+import { useState, useEffect  } from 'react'
 import './likes_page.css'
 import ContactCard from '../components/ContactCard'
 import BottomNav from '../components/BottomNav'
 
 function Likes(){
-    const users = [
-        {
-            id: 1,
-            Name: "Artur",
-            Age: 25,
-            Location: { Country: "Latvia", City: "Riga" },
-            TelegramLink: "https://t.me/arturgornik",
-            ProfilePicUrl: "/img/Profile.png", 
-        },
-        {
-            id: 2,
-            Name: "Anton",
-            Age: 27,
-            Location: { Country: "USA", City: "Los-Angeles" },
-            TelegramLink: "https://t.me/razhnou",
-            ProfilePicUrl: "/img/Profile.png", 
-        }
-    ]
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:8000/likes")
+          .then((res) => res.json())
+          .then((data) => setUsers(data.users));
+      }, []);
 
     return (
         <div className="container">
             <h2>Likes</h2>
             <div className="data">
-                {users.map(user => <ContactCard user={user} key={user.id} displayTG={true}/>)}
+                {users.map(user => <ContactCard user={user} key={user.user_id} displayTG={true}/>)}
                 <BottomNav />
             </div>
         </div>

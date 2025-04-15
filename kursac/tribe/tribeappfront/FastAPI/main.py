@@ -23,10 +23,12 @@ class Location(BaseModel):
     City: str
 
 class Interest(BaseModel):
+    interest_id: int
     Title: str
     Description: str
 
 class User(BaseModel):
+    user_id: int
     ProfilePicUrl: str
     Name: str
     Age: int
@@ -262,9 +264,13 @@ def get_likes():
 @app.get("/search/{user_id}", response_model=User)
 def get_user_by_id(user_id: int):
     user = next((u for u in memory["users"] if u["user_id"] == user_id), None)
-    if my_user["id"] == user["id"]:
+    if my_user["user_id"] == user["user_id"]:
         user = next((u for u in memory["users"] if u["user_id"] == user_id), None)
     if user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return User(**user)
+
+@app.get("/edit", response_model=User)
+def get_my_user():
+    return User(**my_user)
 

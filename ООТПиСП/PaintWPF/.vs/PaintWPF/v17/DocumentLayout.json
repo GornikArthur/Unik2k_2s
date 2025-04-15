@@ -1,46 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\",
+  "WorkspaceRootPath": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\onedrive\\dokumente\\unik\\paintwpf_2\\paintwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\mypolygon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\mypolygon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\myellipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\myellipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\myrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\myrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\mybrokenline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\mybrokenline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\myline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\myline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\myfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\myfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\actionfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\onedrive\\dokumente\\unik\\paintwpf_2\\paintwpf\\actionfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\actionfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\documents\\artur\\unik2k_2s\\\u043E\u043E\u0442\u043F\u0438\u0441\u043F\\paintwpf\\paintwpf\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|c:\\users\\artur\\onedrive\\dokumente\\unik\\paintwpf_2\\paintwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{50C9AB59-2F3F-4F37-849D-F6F3EC7C7F1C}|PaintWPF\\PaintWPF.csproj|solutionrelative:paintwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,133 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Action.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\Action.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\Action.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\Action.cs",
-              "RelativeToolTip": "PaintWPF\\Action.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T06:23:17.335Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyPolygon.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyPolygon.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyPolygon.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyPolygon.cs",
-              "RelativeToolTip": "PaintWPF\\MyPolygon.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAwwL4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:27:10.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MyEllipse.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyEllipse.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyEllipse.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyEllipse.cs",
-              "RelativeToolTip": "PaintWPF\\MyEllipse.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAYwIIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:02:41.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PaintWPF\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml",
-              "RelativeToolTip": "PaintWPF\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-02T08:56:16.59Z",
-              "EditorCaption": ""
+              "Title": "ActionFill.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\ActionFill.cs",
+              "RelativeDocumentMoniker": "PaintWPF\\ActionFill.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\ActionFill.cs",
+              "RelativeToolTip": "PaintWPF\\ActionFill.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:30:37.016Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PaintWPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "PaintWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAQwPAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAvwI0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:44:56.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ActionFill.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\ActionFill.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\ActionFill.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\ActionFill.cs",
-              "RelativeToolTip": "PaintWPF\\ActionFill.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:43:05.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MyBrokenLine.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyBrokenLine.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyBrokenLine.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyBrokenLine.cs",
-              "RelativeToolTip": "PaintWPF\\MyBrokenLine.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAIA7wIcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:05:25.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyFigure.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyFigure.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyFigure.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyFigure.cs",
-              "RelativeToolTip": "PaintWPF\\MyFigure.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowBsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:55:20.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MyLine.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyLine.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyLine.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyLine.cs",
-              "RelativeToolTip": "PaintWPF\\MyLine.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAqwG4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:38:27.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyRectangle.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyRectangle.cs",
-              "RelativeDocumentMoniker": "PaintWPF\\MyRectangle.cs",
-              "ToolTip": "C:\\Users\\artur\\Documents\\Artur\\Unik2k_2s\\\u041E\u041E\u0422\u041F\u0438\u0421\u041F\\PaintWPF\\PaintWPF\\MyRectangle.cs",
-              "RelativeToolTip": "PaintWPF\\MyRectangle.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAewGgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:49:46.614Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PaintWPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Dokumente\\unik\\PaintWPF_2\\PaintWPF\\MainWindow.xaml",
+              "RelativeToolTip": "PaintWPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-02T08:56:16.59Z"
             }
           ]
         }

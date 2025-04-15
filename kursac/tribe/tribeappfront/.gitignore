@@ -1,0 +1,54 @@
+# ----------------------
+# Node (React frontend)
+# ----------------------
+node_modules/
+build/
+dist/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Vite
+.vite/
+
+# ----------------------
+# Python (FastAPI backend)
+# ----------------------
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.sqlite3
+*.db
+.env
+.venv/
+venv/
+env/
+*.pem
+*.pyc
+*.pyo
+
+# ----------------------
+# OS-specific junk
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# VSCode settings (optional)
+# ----------------------
+.vscode/
+
+# ----------------------
+# PyCharm settings (optional)
+# ----------------------
+.idea/

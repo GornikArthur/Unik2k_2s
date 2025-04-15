@@ -149,7 +149,10 @@ namespace PaintWPF
 
 					for (int i = cur_action_pos; i < arr_actions.Count;)
 					{
-						arr_figures.Remove((MyFigure)arr_actions[i]);
+						if (arr_actions[i] is MyFigure myFigure)
+						{
+							arr_figures.Remove(myFigure);
+						}
 						arr_actions.RemoveAt(i);
 					}
 					cur_action_pos++;
@@ -187,6 +190,14 @@ namespace PaintWPF
 					{
 						arr_actions.Add(new ActionFill(arr_figures[i], selectedColor));
 						cur_action_pos++;
+						for (int j = cur_action_pos - 1; j < arr_actions.Count - 1;)
+						{
+							if (arr_actions[j] is MyFigure myFigure)
+							{
+								arr_figures.Remove(myFigure);
+							}
+							arr_actions.RemoveAt(j);
+						}
 						break;
 					}
 				}
@@ -205,6 +216,10 @@ namespace PaintWPF
 
 			string json = File.ReadAllText(filePath);
 			arr_figures = JsonSerializer.Deserialize<List<MyFigure>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+			arr_actions.Clear();
+			arr_actions.AddRange(arr_figures.Cast<Action>());
+			cur_action_pos = arr_actions.Count;
 
 			Paint_canvas.Children.Clear(); // Очищаем холст
 
@@ -236,10 +251,8 @@ namespace PaintWPF
 		{
 			if (!isDrawing && cur_action_pos < arr_actions.Count)
 			{
-				
 				arr_actions[cur_action_pos].RedoAction(Paint_canvas, cur_action_pos, arr_actions);
 				cur_action_pos++;
-				//arr_figures.Remove(arr_figures[arr_figures.Count - 1]);
 			}
 		}
 
@@ -253,11 +266,11 @@ namespace PaintWPF
 
 		private void RedoAllButton_Click(object sender, RoutedEventArgs e)
 		{
-			for (int i = cur_action_pos + 1; i < arr_figures.Count; i++)
+			for (int i = cur_action_pos; i < arr_actions.Count; i++)
 			{
-				arr_figures[i].AddFigure(Paint_canvas);
+				arr_actions[i].RedoAction(Paint_canvas, cur_action_pos, arr_actions);
 			}
-			cur_action_pos = arr_figures.Count;
+			cur_action_pos = arr_actions.Count;
 		}
 	}
 }

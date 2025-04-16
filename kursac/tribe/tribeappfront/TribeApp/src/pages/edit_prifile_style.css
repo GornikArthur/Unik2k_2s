@@ -120,6 +120,32 @@ header h2 {
     flex: 1;
 }
 
+.interest-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5vw; /* Немного отступа снизу для текста */
+}
+
+.interest-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5vw;
+    font-size: 2vw;
+    color: #FF4D4D; /* Красный для кнопки удаления */
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.interest-btn img{
+    width: 7vw;
+}
+
+.interest-btn:active {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
 .interests h3 {
     margin-top: 0;
     margin-bottom: 0.92vw;
@@ -142,7 +168,7 @@ header h2 {
     padding-left: 1.85vw;
     padding-right: 1.85vw;
     border-radius: 1.85vw;
-    width: 30vw;
+    width: 40vw;
     text-align: center;
 }
 
@@ -322,6 +348,4 @@ input[type="text"]:focus, textarea:focus {
     transform: scale(0.95);
     opacity: 0.6;
 }
-
-
 

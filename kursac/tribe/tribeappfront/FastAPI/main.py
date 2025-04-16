@@ -71,7 +71,8 @@ memory = {
                 "Title": "Traveling",
                 "Description": "Loves discovering new cultures and meeting people around the world."
             }
-        ]
+        ],
+      "LikedBy": []
     },
     {
         "user_id": 2,
@@ -101,7 +102,8 @@ memory = {
                 "Title": "Gaming",
                 "Description": "Enjoys competitive online games and exploring game design mechanics."
             }
-        ]
+        ],
+      "LikedBy": []
     },
     {
     "user_id": 3,
@@ -131,7 +133,8 @@ memory = {
             "Title": "Sustainability",
             "Description": "Advocates for eco-friendly lifestyle and environmental responsibility."
         }
-    ]
+    ],
+      "LikedBy": []
     },
     {
         "user_id": 4,
@@ -161,39 +164,8 @@ memory = {
                 "Title": "Sci-Fi Books",
                 "Description": "Fan of Isaac Asimov, Arthur C. Clarke, and Philip K. Dick."
             }
-        ]
-    },
-    {
-        "user_id": 5,
-        "Name": "Sara",
-        "Age": 22,
-        "Location": { "Country": "Spain", "City": "Barcelona" },
-        "TelegramLink": "https://t.me/sara_inspo",
-        "ProfilePicUrl": "/img/Profile.png",
-        "Interests": [
-            {
-                "interest_id": 1,
-                "Title": "Photography",
-                "Description": "Enjoys street and nature photography."
-            },
-            {
-                "interest_id": 2,
-                "Title": "Languages",
-                "Description": "Learning French, German and Japanese."
-            },
-            {
-                "interest_id": 3,
-                "Title": "Dancing",
-                "Description": "Loves salsa and modern dance classes."
-            },
-            {
-                "interest_id": 4,
-                "Title": "Volunteering",
-                "Description": "Helps local NGOs with educational projects."
-            }
-        ]
-    },
-    {
+        ],
+      "LikedBy": [{
         "user_id": 6,
         "Name": "David",
         "Age": 28,
@@ -221,7 +193,8 @@ memory = {
                 "Title": "Coffee Brewing",
                 "Description": "Enthusiast of specialty coffee and home brewing."
             }
-        ]
+        ],
+      "LikedBy": []
     },
     {
         "user_id": 7,
@@ -251,7 +224,102 @@ memory = {
                 "Title": "Travel Blogging",
                 "Description": "Shares experiences and tips from global adventures."
             }
-        ]
+        ],
+      "LikedBy": []
+    }]
+    },
+    {
+        "user_id": 5,
+        "Name": "Sara",
+        "Age": 22,
+        "Location": { "Country": "Spain", "City": "Barcelona" },
+        "TelegramLink": "https://t.me/sara_inspo",
+        "ProfilePicUrl": "/img/Profile.png",
+        "Interests": [
+            {
+                "interest_id": 1,
+                "Title": "Photography",
+                "Description": "Enjoys street and nature photography."
+            },
+            {
+                "interest_id": 2,
+                "Title": "Languages",
+                "Description": "Learning French, German and Japanese."
+            },
+            {
+                "interest_id": 3,
+                "Title": "Dancing",
+                "Description": "Loves salsa and modern dance classes."
+            },
+            {
+                "interest_id": 4,
+                "Title": "Volunteering",
+                "Description": "Helps local NGOs with educational projects."
+            }
+        ],
+      "LikedBy": []
+    },
+    {
+        "user_id": 6,
+        "Name": "David",
+        "Age": 28,
+        "Location": { "Country": "UK", "City": "London" },
+        "TelegramLink": "https://t.me/davidtech",
+        "ProfilePicUrl": "/img/Profile.png",
+        "Interests": [
+            {
+                "interest_id": 1,
+                "Title": "Blockchain",
+                "Description": "Exploring decentralization and smart contracts."
+            },
+            {
+                "interest_id": 2,
+                "Title": "Football",
+                "Description": "Plays in an amateur league every weekend."
+            },
+            {
+                "interest_id": 3,
+                "Title": "Podcasts",
+                "Description": "Listens to tech and business podcasts daily."
+            },
+            {
+                "interest_id": 4,
+                "Title": "Coffee Brewing",
+                "Description": "Enthusiast of specialty coffee and home brewing."
+            }
+        ],
+      "LikedBy": []
+    },
+    {
+        "user_id": 7,
+        "Name": "Yuki",
+        "Age": 26,
+        "Location": { "Country": "Japan", "City": "Osaka" },
+        "TelegramLink": "https://t.me/yuki_world",
+        "ProfilePicUrl": "/img/Profile.png",
+        "Interests": [
+            {
+                "interest_id": 1,
+                "Title": "Anime",
+                "Description": "Big fan of Studio Ghibli and classic series."
+            },
+            {
+                "interest_id": 2,
+                "Title": "Programming",
+                "Description": "Loves building mobile apps with Flutter and Kotlin."
+            },
+            {
+                "interest_id": 3,
+                "Title": "Origami",
+                "Description": "Practices traditional Japanese paper folding art."
+            },
+            {
+                "interest_id": 4,
+                "Title": "Travel Blogging",
+                "Description": "Shares experiences and tips from global adventures."
+            }
+        ],
+      "LikedBy": []
     }
   ]
 }
@@ -261,7 +329,7 @@ my_user = memory["users"][3]
 
 @app.get("/likes", response_model=Users)
 def get_likes():
-    return Users(users=memory["users"])
+    return Users(users=my_user.get("LikedBy", []))
 
 @app.get("/search/{user_id}", response_model=User)
 def get_user_by_id(user_id: int):
@@ -300,4 +368,11 @@ def add_interest(interest: Interest):
             return interest 
     return interest
 
+@app.post("/remove_interest/{interest_id}")
+def remove_interest(interest_id: int):
+    global my_user
+    if interest_to_remove is None:
+        raise HTTPException(status_code=404, detail="Interest not found")
+    my_user["Interests"] = [i for i in my_user["Interests"] if i["Id"] != interest_id]
 
+    return {"message": "Interest removed"}

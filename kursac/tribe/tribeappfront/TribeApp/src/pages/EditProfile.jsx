@@ -3,7 +3,7 @@ import './edit_prifile_style.css';
 import BottomNav from '../components/BottomNav';
 import BasicInfo from '../components/BasicInfo';
 import InterestsInfo from '../components/InterestsInfo';
-import Header from '../components/Header';
+import ContactCard from '../components/ContactCard';
 import AddNewInterest from '../components/AddNewInterest';
 import ChangeProfileData from '../components/ChangeProfileData';
 
@@ -45,8 +45,7 @@ function Search() {
     return (
         <div className="container">
             {!showEditProfile && (<>
-                <Header image={user.ProfilePicUrl}/>
-                <BasicInfo user={user} />
+                <ContactCard user={user} key={user.user_id} displayTG={false}/>
                 <div className="edit-info">
                     <button className="edit-btn" onClick={handleEditDataClick}>Edit Profile</button>
                 </div>  

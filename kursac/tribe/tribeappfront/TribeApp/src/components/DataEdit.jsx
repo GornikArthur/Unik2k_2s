@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import citiesByCountry from '../assets/countries.json';
 
 function DataEdit({ user, onSave, onCancel }) {
@@ -8,15 +8,40 @@ function DataEdit({ user, onSave, onCancel }) {
     const [Age, setAge] = useState(user.Age || 18);
 
     const handleSaveClick = () => {
+        const updatedUser = {
+            ...user,
+            Name,
+            Age,
+            Location: { Country, City }
+        };
+    
         if (Name.trim()) {
-            onSave({
-                ...user,
-                Name,
-                Age,
-                Location: { Country, City }
-            });
+            onSave(updatedUser);
         }
+
+        fetch("http://localhost:8000/edit_user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedUser)
+        })
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to save");
+            return response.json();
+        })
     };    
+
+    useEffect(() => {
+        const cities = citiesByCountry[Country];
+        if (cities && cities.length > 0) {
+            if (!cities.includes(City)) {
+                setCity(cities[0]); // сбрасываем только если текущего города нет в списке
+            }
+        } else {
+            setCity('');
+        }
+    }, [Country, City]);
 
     return (
         <>

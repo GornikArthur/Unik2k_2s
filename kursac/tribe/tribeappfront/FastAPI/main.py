@@ -23,9 +23,11 @@ class Location(BaseModel):
     City: str
 
 class Interest(BaseModel):
-    interest_id: int
     Title: str
     Description: str
+
+class FullInterest(Interest):
+    interest_id: int
 
 class User(BaseModel):
     user_id: int
@@ -34,7 +36,7 @@ class User(BaseModel):
     Age: int
     Location: Location
     TelegramLink: HttpUrl
-    Interests: List[Interest]
+    Interests: List[FullInterest]
 
 class Users(BaseModel):
     users: List[User]
@@ -273,4 +275,29 @@ def get_user_by_id(user_id: int):
 @app.get("/edit", response_model=User)
 def get_my_user():
     return User(**my_user)
+
+@app.post("/edit_user", response_model=User)
+def change_user_info(user: User):
+    global my_user
+    if my_user["user_id"] == user.user_id:
+        my_user = user.dict()
+
+    for i, u in enumerate(memory["users"]):
+        if u["user_id"] == user.user_id:
+            memory["users"][i] = user.dict()
+            return user
+    memory["users"].append(user.dict())
+    return user
+
+@app.post("/edit_interest", response_model=Interest)
+def add_interest(interest: Interest):
+    global my_user
+    interest = interest.dict()
+    interest["interest_id"] = len(my_user["Interests"]) + 1
+    for i, u in enumerate(memory["users"]):
+        if u["user_id"] == my_user["user_id"]:
+            memory["users"][i]["Interests"].append(interest)
+            return interest 
+    return interest
+
 

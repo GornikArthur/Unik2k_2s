@@ -5,7 +5,7 @@ function Header({image, editable}) {
             <h2>Edit Profile</h2>
             <div className="profile-pic">
                 <img src={image} alt="Profile Picture" />
-                {editable && <button class="edit-btn" id="load-btn">Load</button>}
+                {editable && <button className="edit-btn" id="load-btn">Load</button>}
             </div>
         </header>
     );

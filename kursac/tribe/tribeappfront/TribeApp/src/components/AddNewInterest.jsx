@@ -5,9 +5,27 @@ function AddNewInterest({ onSave, onCancel }) {
     const [description, setDescription] = useState('');
 
     const handleSaveClick = () => {
+        const interest = {
+            Title: title, Description: description
+        };
+    
         if (title.trim()) {
-            onSave({ Title: title, Description: description });
+            onSave(interest);
         }
+
+        fetch("http://localhost:8000/edit_interest", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(interest)
+        })
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to save");
+            return response.json();
+        }).then(data => {
+            onSave(data);
+        })
     };
 
     return (

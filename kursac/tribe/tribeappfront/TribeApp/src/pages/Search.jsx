@@ -42,7 +42,7 @@ function Search() {
     return (
         <div className="container">
             <ContactCard user={user} displayTG={false} />
-            <InterestsInfo interests={user.Interests} />
+            <InterestsInfo interests={user.Interests} isMain={false}/>
             <LikeDislike handleLike={handleLike} handleDisLike={handleDisLike} />
             <BottomNav />
         </div>

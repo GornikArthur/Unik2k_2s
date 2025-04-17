@@ -371,8 +371,5 @@ def add_interest(interest: Interest):
 @app.post("/remove_interest/{interest_id}")
 def remove_interest(interest_id: int):
     global my_user
-    if interest_to_remove is None:
-        raise HTTPException(status_code=404, detail="Interest not found")
-    my_user["Interests"] = [i for i in my_user["Interests"] if i["Id"] != interest_id]
-
+    my_user["Interests"] = [i for i in my_user["Interests"] if i["interest_id"] != interest_id]
     return {"message": "Interest removed"}

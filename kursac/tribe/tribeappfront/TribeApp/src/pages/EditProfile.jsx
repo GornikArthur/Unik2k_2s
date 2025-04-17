@@ -7,17 +7,21 @@ import ContactCard from '../components/ContactCard';
 import AddNewInterest from '../components/AddNewInterest';
 import ChangeProfileData from '../components/ChangeProfileData';
 
-function Search() {
+function EditProfile() {
     const [showNewInterest, setShowNewInterest] = useState(false);
     const [showEditProfile, setShowEditProfile] = useState(false);
 
     const [user, setUser] = useState();
 
-    useEffect(() => {
+    const fetchUser = () => {
         fetch("http://127.0.0.1:8000/edit")
             .then((res) => res.json())
             .then((data) => setUser(data));
-        }, []);
+    };
+
+    useEffect(() => {
+        fetchUser();
+    }, []);
 
     if (!user) {
         return <div>Loading...</div>;
@@ -49,7 +53,7 @@ function Search() {
                 <div className="edit-info">
                     <button className="edit-btn" onClick={handleEditDataClick}>Edit Profile</button>
                 </div>  
-                <InterestsInfo interests={user?.Interests || []} />
+                <InterestsInfo interests={user?.Interests || []} isMain={true} fetchUser={fetchUser}/>
                 {!showNewInterest && (
                     <button className="add-interest-btn" onClick={handleAddInterestClick}>
                         <img src="../img/add-interest.png" alt="Profile Picture" />
@@ -66,4 +70,4 @@ function Search() {
     );
 }
 
-export default Search;
+export default EditProfile;

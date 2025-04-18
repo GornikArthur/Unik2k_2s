@@ -1,9 +1,7 @@
-from fastapi import FastAPI
-
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel, HttpUrl
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Optional
-from fastapi import HTTPException
+from typing import List, Optional, Annotated
 
 app = FastAPI()
 

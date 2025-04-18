@@ -1,0 +1,59 @@
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\bin\Debug\net8.0-windows\Lab8.exe
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\bin\Debug\net8.0-windows\Lab8.deps.json
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\bin\Debug\net8.0-windows\Lab8.runtimeconfig.json
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\bin\Debug\net8.0-windows\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\bin\Debug\net8.0-windows\Lab8.pdb
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\MainWindow.baml
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\App.g.cs
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8_MarkupCompile.cache
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.g.resources
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfoInputs.cache
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfo.cs
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.csproj.CoreCompileInputs.cache
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\refint\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.pdb
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\Lab8.genruntimeconfig.cache
+D:\BSUIR\year2\part2\M&APR\MIAPR_8\Lab8\obj\Debug\net8.0-windows\ref\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\bin\Debug\net8.0-windows\Lab8.exe
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\bin\Debug\net8.0-windows\Lab8.deps.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\bin\Debug\net8.0-windows\Lab8.runtimeconfig.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\bin\Debug\net8.0-windows\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\bin\Debug\net8.0-windows\Lab8.pdb
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\MainWindow.baml
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\App.g.cs
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8_MarkupCompile.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.g.resources
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfoInputs.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfo.cs
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.csproj.CoreCompileInputs.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.sourcelink.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\refint\Lab8.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.pdb
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\Lab8.genruntimeconfig.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab8\obj\Debug\net8.0-windows\ref\Lab8.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\bin\Debug\net8.0-windows\Lab8.exe
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\bin\Debug\net8.0-windows\Lab8.deps.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\bin\Debug\net8.0-windows\Lab8.runtimeconfig.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\bin\Debug\net8.0-windows\Lab8.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\bin\Debug\net8.0-windows\Lab8.pdb
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8_MarkupCompile.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.g.resources
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfoInputs.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.AssemblyInfo.cs
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.csproj.CoreCompileInputs.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.sourcelink.json
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\refint\Lab8.dll
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.pdb
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\Lab8.genruntimeconfig.cache
+C:\Users\artur\Documents\Artur\Unik2k_2s\МИАПР\Лабораторные работы\Lab8\obj\Debug\net8.0-windows\ref\Lab8.dll

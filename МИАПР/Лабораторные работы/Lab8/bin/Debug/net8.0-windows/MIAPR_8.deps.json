@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MIAPR_8/1.0.0": {
+        "runtime": {
+          "MIAPR_8.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MIAPR_8/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

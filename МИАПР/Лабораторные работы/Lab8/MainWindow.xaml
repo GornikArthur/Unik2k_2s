@@ -1,0 +1,101 @@
+﻿<Window x:Class="Lab8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Lab8" Height="720" Width="1280"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF7F7F7">
+
+    <Window.InputBindings>
+        <KeyBinding Key="Escape" Command="Close" />
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="Close" Executed="CommandBinding_OnExecuted" />
+    </Window.CommandBindings>
+
+    <Window.Resources>
+        <LinearGradientBrush x:Key="ButtonGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFB2EBF2" Offset="0" />
+            <GradientStop Color="#FF80DEEA" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="TextGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF00BCD4" Offset="0" />
+            <GradientStop Color="#FF26C6DA" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <Grid Background="#FFF7F7F7" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Правая панель -->
+        <Border Grid.Column="0"
+                Margin="10"
+                Padding="15"
+                Background="WhiteSmoke"
+                BorderBrush="#FFD1D1D1"
+                BorderThickness="1"
+                CornerRadius="12"
+                VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Управление" FontSize="18" FontWeight="Bold" Margin="0 0 0 10" Foreground="#333"/>
+
+                <Button Click="Synthesize_Click"
+                        Content="Создать грамматику"
+                        Height="35"
+                        Margin="0 5"
+                        Background="{StaticResource ButtonGradient}"
+                        Foreground="Black"
+                        BorderThickness="0"
+                        FontWeight="SemiBold"/>
+                
+                <Button Click="Generate_Click"
+                        Content="Сгенерировать подобную"
+                        Height="35"
+                        Margin="0 5"
+                        Background="{StaticResource ButtonGradient}"
+                        Foreground="Black"
+                        BorderThickness="0"
+                        FontWeight="SemiBold"/>
+
+                <Button Click="Clean_Click"
+                        Content="Очистить"
+                        Height="35"
+                        Margin="0 5"
+                        Background="{StaticResource ButtonGradient}"
+                        Foreground="Black"
+                        BorderThickness="0"
+                        FontWeight="SemiBold"/>
+
+                <Separator Margin="0 15"/>
+
+                <TextBlock Text="Грамматика:" FontSize="14" FontWeight="Bold" Margin="15 10 0 5"/>
+                <Label x:Name="GrammarLabel"
+                       Background="#FFE0F7FA"
+                       Foreground="{StaticResource TextGradient}"
+                       Padding="5"
+                       FontSize="13"
+                       BorderBrush="#FFB2EBF2"
+                       BorderThickness="1"
+                       HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        
+        <!-- Левая панель с канвасом -->
+        <Grid Grid.Column="1" Background="White" Margin="5">
+            <Canvas Width="1080" Height="700" x:Name="Canvas" />
+            <Border Name="Border"
+                    BorderBrush="#FFCCCCCC"
+                    BorderThickness="2"
+                    Background="Transparent"
+                    MouseMove="Border_OnMouseMove"
+                    MouseLeftButtonDown="Canvas_OnMouseLeftButtonDown"
+                    MouseRightButtonDown="Canvas_OnMouseRightButtonDown"
+                    Height="700"/>
+        </Grid>
+    </Grid>
+</Window>

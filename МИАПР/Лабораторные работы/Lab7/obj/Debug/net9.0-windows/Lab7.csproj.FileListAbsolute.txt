@@ -1,0 +1,15 @@
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\bin\Debug\net9.0-windows\Lab7.exe
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\bin\Debug\net9.0-windows\Lab7.deps.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\bin\Debug\net9.0-windows\Lab7.runtimeconfig.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\bin\Debug\net9.0-windows\Lab7.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\bin\Debug\net9.0-windows\Lab7.pdb
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.AssemblyInfoInputs.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.AssemblyInfo.cs
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.csproj.CoreCompileInputs.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.sourcelink.json
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\refint\Lab7.dll
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.pdb
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\Lab7.genruntimeconfig.cache
+D:\BSUIR\year2\part2\M&APR\Labs\Lab7\obj\Debug\net9.0-windows\ref\Lab7.dll
